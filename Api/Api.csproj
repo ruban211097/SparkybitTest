@@ -10,11 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.22.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Shared\Infrastructure\Infrastructure.csproj" />
     <ProjectReference Include="..\Shared\Messsaging\Messsaging.csproj" />
   </ItemGroup>
 
